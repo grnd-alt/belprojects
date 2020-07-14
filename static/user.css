@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media screen and (max-width:700px){
+	body{
+		background-color:#121212;
+	}
+	.home-field-image{
+		width:80%;
+		background-color:red;
+	}
+	#text{
+		max-width: 100%;
+	}
+	.home-field{
+		width:100%;
+		background-color: #1C2829;
+		border-radius:5%;
+		color:white;
+		margin-bottom: 50px; 
+	}
+	.home-field-headline{
+		font-family: 'Roboto';
+		font-size: 1em;
+		text-align: center;
+	}
+	#home-page-content{
+		width:100%;
+		background-color: #121212;
+		padding:0px;
+		color:white;
+	}
+	.home-field-info-text{
+		width:80%;
+		margin-left: 10%;
+		font-size:1em;
+		padding-top: 0px;
+	}
+	.home-field-info{
+		text-align:center;
+		width:100%;
+	}
+	#header{
+		margin: -5px;
+		padding: 5px;
+		width:100%;
+		display:grid;
+		grid-template-columns:25% 50% auto;
+		background: #1e5799; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #1e5799 0%, #7f1793 0%, #231317 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #1e5799 0%,#7f1793 0%,#231317 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #1e5799 0%,#7f1793 0%,#231317 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	#text{
+		font-family:'Robot';
+		color:white;
+		line-height: 0px;
+		text-align:center;
+	}
+	h2{
+		font-size:2.25em;
+	}
+	a{
+		font-size:0.5em;
+		margin-top: 0;
+	}
+	.logo{
+		width:100%;
+		border-radius:50%;
+	}
+	#sidebar-image{
+		width:100%;
+		padding-top:25%;
+		cursor:pointer;
+	}
+	#menu-wrapper{
+		display: none;
+		width:100%;
+		position: absolute;
+		margin: -10px;
+		padding-right: 20%;
+	}
+	#menu-list{
+		background-color: #11171F;
+		width:80%;
+		line-height: 2em;
+		font-size: 2em;
+		list-style-type: none;
+		padding:0px;
+		margin: 0px;
+	}
+	.menu-text{
+		width:100%;
+		color:grey;
+		text-decoration: none;
+		font-size:1.5em;
+	}
+	.menu-text-wrapper{
+		margin-top:auto;
+		background-color:#00182E;
+		border-right: solid #11171F;
+		margin-right:1em;
+	}
+	li{
+		border-width: 1em;
+		width: 100%;
+	}
+	#Home{
+		border-top:solid;
+		border-right: none;
+		border-color: #11171F;
+		border-width: 1em;
+	}
+	#Contact{
+		border-bottom:solid;
+		border-right: none;
+		border-color: #11171F;
+		border-width: 1em;
+	}
+}
+@media only screen and (min-width: 1146px){
+	body{
+	padding:2.5%;
+	font-family: 'Roboto',sans-serif;
+	background-image: linear-gradient(to top right, rgb(2, 13, 171), rgb(11, 31, 168), rgb(21, 48, 165), rgb(30, 66, 162), rgb(40, 84, 159), rgb(49, 101, 156), rgb(59, 119, 154), rgb(68, 136, 151), rgb(78, 154, 148), rgb(87, 172, 145), rgb(97, 189, 142), rgb(106, 207, 139));
+	}
+	#hole-wrapper{
+		background-color: #ced0ce;
+		border-radius:5px;
+	}
+	#header{
+		width:100%;
+		background-color:white;
+		display:grid;
+		grid-template-columns:20% 65% auto;
+		line-height: 0px;
+		text-align: center;
+		border-radius: 5px 5px 0px 0px;
+	}
+	h2{
+		font-size:4em;
+		margin-bottom:0px;
+	}
+	#firmname{
+		margin-bottom:15%;
+	}
+	a{
+		font-size:0.8em;
+	}
+	li{
+		padding-right:5px;
+		display: inline-block;
+	}
+	#contact{
+		padding-right:0px;
+	}
+	#sidebar-image{
+		display:none;
+	}
+	.logo{
+		margin-left:auto;
+		width:auto;
+		max-width: 100%;
+		border-top-right-radius: 5px;
+	}
+	#menu-list{
+		margin-top:7%;
+		margin-left: 10%;
+	}
+	#menu-wrapper{
+		word-wrap: break-word;
+		background-color: #64839b;
+		height: 100%;
+		font-size:300%;
+		text-align: left;
+		margin-top:auto !important;
+	}
+	#home-page-content{
+		width:100%;
+		display:grid;
+		grid-template-columns: 30% auto 30% auto 30%;	
+		text-align:center;
+		/*padding-right:20%;*/
+		/*padding-left: 20%;*/
+	}
+	.home-field-image-wrapper{
+		background-color:grey;
+		border-radius:10px;
+	}
+	.home-field-image{
+		vertical-align: top;
+		max-width:50%;
+		margin:0 auto;
+	}
+}

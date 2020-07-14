@@ -1,0 +1,18 @@
+<!Doctype html>
+<head>
+<link rel='stylesheet' type = 'text/css' href = "{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+<div id = 'login' width = 30% margin-left =15% >
+<form id = 'login_form'>
+<input type = 'mail' placeholder = 'E-mail' id = 'mail_input'></input> 
+<br>
+<input type = 'password' placeholder = 'Passwort' id = 'pass_input'></input>
+<br>
+<input type = 'submit' value='einloggen' id = 'submit'>
+</form>
+</div>
+<script src = "http://code.jquery.com/jquery.js"></script>
+<script src = "{{url_for('static',filename = 'first.js')}}"></script>
+</body>
+

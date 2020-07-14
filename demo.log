@@ -1,0 +1,8 @@
+INFO:werkzeug: * Running on http://192.168.1.101:1337/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 147-364-413
+INFO:werkzeug:213.187.92.13 - - [22/Jun/2020 10:11:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:213.187.92.13 - - [22/Jun/2020 10:11:51] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:213.187.92.13 - - [22/Jun/2020 10:11:51] "GET /static/first.js HTTP/1.1" 200 -
+INFO:werkzeug:213.187.92.13 - - [22/Jun/2020 10:11:51] "GET /favicon.ico HTTP/1.1" 404 -
