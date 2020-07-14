@@ -14,24 +14,4 @@ $(document).ready(function(){
 
 		event.preventDefault();
 	});
-	$('#main_button').on('click',function(){
-		$.ajax({
-			url : '/main',
-			type: 'POST',
-			data : {message:"this is a button"},
-			success:function(result){
-				$('body').html(result);
-			}
-		})
-		.done(function(){
-			$('#main_button').text("hello world now")
-		});
-	});
-	$('#main_image').on('click',function(){
-		$.ajax({
-			url: "/main",
-			type : 'POST',
-			data : {message:"this is an image"}
-		});
-	});
 });

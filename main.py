@@ -11,6 +11,12 @@ def main():
 		print(request.form["message"])
 		print('here')
 	return render_template("main.html")
+@app.route("/control",methods = ["POST"])
+def controles():
+	if request.method == "POST":
+		button = request.form["button"]
+		if button == "projects":
+			return render_template("all_projects.html")
 @app.route('/main',methods = ["POST"])
 def handler():
 	if request.method == 'POST':
