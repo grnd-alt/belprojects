@@ -11,7 +11,6 @@ $(document).ready(function(){
 					$('body').html(result);
 				};}
 		})
-
 		event.preventDefault();
 	});
 });

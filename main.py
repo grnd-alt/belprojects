@@ -1,7 +1,8 @@
 from flask import render_template,request,Flask,jsonify,redirect
 import logging
+import socket
 app = Flask(__name__)
-logging.basicConfig(filename = 'demo.log',level=logging.DEBUG)
+#logging.basicConfig(filename = 'demo.log',level=logging.DEBUG)
 app.secret_key="Minecraft12"
 @app.route("/",methods=["GET","POST"])
 def main():
@@ -11,12 +12,17 @@ def main():
 		print(request.form["message"])
 		print('here')
 	return render_template("main.html")
-@app.route("/control",methods = ["POST"])
+@app.route("/control",methods = ["GET","POST"])
 def controles():
-	if request.method == "POST":
+	possibles = ["home","about","projects","contact"]
+	if request.method == 'POST':
 		button = request.form["button"]
-		if button == "projects":
-			return render_template("all_projects.html")
+		print(request.form)
+		return render_template(button+".html")
+	#return render_template("all_projects.html")
+@app.route("/projects",methods = ["GET"])
+def projects():
+	return render_template("all_projects.html")
 @app.route('/main',methods = ["POST"])
 def handler():
 	if request.method == 'POST':
@@ -24,6 +30,7 @@ def handler():
 		return render_template('user_page.html')
 @app.route('/tester')
 def tester():
+	print("hello")
 	return render_template('user_page.html')
 if __name__ == "__main__":
-	app.run(host="192.168.1.101", port=1337,debug = True)
+	app.run(host=socket.gethostbyname(socket.gethostname()), port=1337,debug = True)

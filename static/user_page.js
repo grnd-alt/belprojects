@@ -7,17 +7,19 @@ $('document').ready(function(){
 			$('#menu-wrapper').css('display','block');
 		}
 	});
-	$("#Projects").on("click",function(event){
-		$.ajax(){
+	$(".menu-text").on("click",function(event){
+		var id = event.target.id;
+		alert(id);
+		//event.targer.css("background-color","purple");
+		$.ajax({
 			url:"/control",
 			type:"POST",
-			data:{button:"projects"}
-			succes:funtction(result){
-				if (result){
-					$('body').html(result);
-				}
+			data:{button:id},
+			success:function(result){
+				$('body').html(result);
+				$("#"+id).css("background-color","purple");
+				$("#"+id+"_wrapper").css("background-color","purple");
 			}
-		}		
+		})
 	})
-	event.preventDefault();
 });
