@@ -9,7 +9,6 @@ $('document').ready(function(){
 	});
 	$(".menu-text").on("click",function(event){
 		var id = event.target.id;
-		alert(id);
 		//event.targer.css("background-color","purple");
 		$.ajax({
 			url:"/control",
@@ -17,7 +16,7 @@ $('document').ready(function(){
 		 	data:{button:id},
 			success:function(result){
 				$('body').html(result);
-				$("#"+id).css("background-color","purple");
+				$("#"+id).css("background-color","darkgrey");
 				$("#"+id+"_wrapper").css("background-color","purple");
 			}
 		})
