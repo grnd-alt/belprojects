@@ -1,0 +1,41 @@
+<!Doctype html>
+<head>
+<link rel='stylesheet' type = 'text/css' href = "{{url_for('static',filename='user.css')}}">
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id = "hole-wrapper">
+<div id = "header">
+<img id = 'sidebar-image' src = "{{url_for('static',filename='sidebar-logo-white.png')}}">
+<div id = 'text'>
+<h2 id = "firmname">f-CLOUD</h2><br>
+<a id='moto'> all projects created by Salim Belakkaf</a>
+</div>
+<div id = 'menu-wrapper'>
+	<ul id = "menu-list">
+		<li>
+			<div id = "home-wrapper" class = "menu-text-wrapper">
+			<a class = "menu-text" id = "home">Home</a>
+			</div>
+		</li>
+		<li>
+			<div id = "about-wrapper" class = "menu-text-wrapper">
+			<a class = "menu-text" id = "about">About me</a>
+			</div>
+		</li>
+		<li>
+			<div id = "project-wrapper" class = "menu-text-wrapper">
+			<a class = "menu-text" id = "project">Projects</a>
+			</div>	
+		</li>
+		<li>
+			<div id = "contact-wrapper"class = "menu-text-wrapper">
+			<a class = "menu-text" id = "contact">Contact</a>
+			</div>
+		</li>
+	</ul>
+</div>
+<img class = 'logo' id = 'image' src = "{{url_for('static',filename='Logo2.png')}}">
+</div>
+<script src = "http://code.jquery.com/jquery.js"></script>
+<script src = "{{url_for('static',filename = 'user_page.js')}}"></script>
