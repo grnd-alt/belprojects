@@ -14,7 +14,7 @@ $('document').ready(function(){
 		$.ajax({
 			url:"/control",
 			type:"POST",
-			data:{button:id},
+		 	data:{button:id},
 			success:function(result){
 				$('body').html(result);
 				$("#"+id).css("background-color","purple");

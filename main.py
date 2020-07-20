@@ -33,4 +33,7 @@ def tester():
 	print("hello")
 	return render_template('user_page.html')
 if __name__ == "__main__":
-	app.run(host=socket.gethostbyname(socket.gethostname()), port=1337,debug = True)
+	s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+	s.connect(("8.8.8.8",80))
+	
+	app.run(host=s.getsockname()[0], port=1337,debug = True)
